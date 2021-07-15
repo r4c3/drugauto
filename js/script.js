@@ -3,7 +3,7 @@ const matches = document.getElementById("matches")
 
 let response, drugs
 async function loadJson() {
-    response = await fetch("/data/drugs.json")
+    response = await fetch("https://r4c3.github.io/drugauto/data/drugs.json")
     drugs = await response.json()
 }
 loadJson()
